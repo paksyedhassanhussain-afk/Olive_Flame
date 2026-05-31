@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Olive Flame – Where fire meets elegance. A premium dining experience in the heart of the city.">
+<title>Olive Flame | Premium Fine Dining</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════ NAVBAR ═══════════════ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo" onclick="showPage('home')">Olive<span> Flame</span></a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('home')">Home</a></li>
+    <li><a href="#" onclick="showPage('about')">About</a></li>
+    <li><a href="#" onclick="showPage('services')">Services</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-reserve">Reserve a Table</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="showPage('home'); closeMobile()">Home</a>
+  <a href="#" onclick="showPage('about'); closeMobile()">About</a>
+  <a href="#" onclick="showPage('services'); closeMobile()">Services</a>
+  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="#contact" class="btn-gold" style="text-align:center; margin-top:16px;" onclick="closeMobile()">Reserve a Table</a>
+</div>
+
+<!-- Notification -->
+<div class="notification" id="notification"></div>
+
+<!-- ═══════════════════════════════════════
+     HOME PAGE
+═══════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-visual">
+    <div class="hero-visual-inner">
+      <div class="hero-plate">
+        <span class="hero-emoji">🍽️</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Est. 2008 &nbsp;·&nbsp; Fine Dining</div>
+    <h1 class="hero-title">Where Fire<br>Meets <em>Elegance</em></h1>
+    <p class="hero-subtitle">A sensory journey through Mediterranean flavors, where each dish is an art form and every evening becomes an unforgettable memory.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-gold">Reserve a Table</a>
+      <a href="#dishes" class="btn-outline">View Our Menu</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-indicator-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>Fine Dining</span><span class="sep">✦</span>
+    <span>Private Events</span><span class="sep">✦</span>
+    <span>Award Winning</span><span class="sep">✦</span>
+    <span>Mediterranean Cuisine</span><span class="sep">✦</span>
+    <span>Chef's Table</span><span class="sep">✦</span>
+    <span>Sommelier Service</span><span class="sep">✦</span>
+    <span>Seasonal Menu</span><span class="sep">✦</span>
+    <span>Bespoke Catering</span><span class="sep">✦</span>
+    <span>Fine Dining</span><span class="sep">✦</span>
+    <span>Private Events</span><span class="sep">✦</span>
+    <span>Award Winning</span><span class="sep">✦</span>
+    <span>Mediterranean Cuisine</span><span class="sep">✦</span>
+    <span>Chef's Table</span><span class="sep">✦</span>
+    <span>Sommelier Service</span><span class="sep">✦</span>
+    <span>Seasonal Menu</span><span class="sep">✦</span>
+    <span>Bespoke Catering</span><span class="sep">✦</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">The Olive Flame Experience</div>
+      <h2 class="section-title">Crafted With<br><em>Intention</em></h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal reveal-delay-1">
+        <span class="feature-icon">🔥</span>
+        <h3>Open Flame Cooking</h3>
+        <p>Our signature wood-fire techniques bring depth and char that no conventional kitchen can replicate. Every flame tells a story.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <span class="feature-icon">🌿</span>
+        <h3>Seasonal Ingredients</h3>
+        <p>We source exclusively from local farms and sustainable producers, ensuring each plate reflects the peak of the season's finest offerings.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <span class="feature-icon">🍷</span>
+        <h3>Curated Wine Cellar</h3>
+        <p>Over 400 labels from boutique vineyards worldwide, personally selected by our Master Sommelier to complement every dish perfectly.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-4">
+        <span class="feature-icon">👨‍🍳</span>
+        <h3>Chef's Table Experience</h3>
+        <p>An intimate six-seat counter where you witness the art of the kitchen firsthand — a dialogue between chef and guest, course by course.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<div id="about-home">
+  <div class="about-visual">
+    <div class="about-visual-text">16</div>
+    <div class="about-badge reveal">
+      <span class="num">16+</span>
+      <span class="label">Years of<br>Excellence</span>
+    </div>
+  </div>
+  <div class="about-content">
+    <div class="reveal">
+      <div class="section-label">Our Story</div>
+      <h2 class="section-title" style="font-size: clamp(28px, 4vw, 52px);">Born From a<br><em>Passion</em> for Fire</h2>
+      <div class="gold-line"></div>
+      <p class="section-subtitle">What began as a small hearth-side gathering in 2008 has grown into one of the city's most celebrated dining destinations. Olive Flame was built on the belief that food is the most intimate form of storytelling.</p>
+      <br>
+      <a href="#" class="btn-outline" onclick="showPage('about')" style="margin-top:16px;">Discover Our Story</a>
+    </div>
+  </div>
+</div>
+
+<!-- DISHES -->
+<section class="section" id="dishes">
+  <div class="section-inner">
+    <div class="dishes-header">
+      <div class="reveal">
+        <div class="section-label">Signature Dishes</div>
+        <h2 class="section-title">Popular<br><em>Selections</em></h2>
+      </div>
+      <a href="#" class="btn-outline reveal" style="flex-shrink:0;">Full Menu</a>
+    </div>
+    <div class="dishes-grid">
+      <div class="dish-card reveal">
+        <div class="dish-visual">
+          <div class="dish-visual-bg g-bg-1"></div>
+          <span class="dish-emoji"><img src="im/Steak.png" alt=""></span>
+        </div>
+        <div class="dish-info">
+          <div class="dish-category">Main Course</div>
+          <h3 class="dish-name">Flame-Seared Wagyu</h3>
+          <p class="dish-desc">A5 grade Japanese Wagyu, dry-aged 45 days, kissed by open flame and finished with truffle jus.</p>
+          <div class="dish-footer">
+            <span class="dish-price"><sup>$</sup>185</span>
+            <span class="dish-tag">Chef's Special</span>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal reveal-delay-1">
+        <div class="dish-visual">
+          <div class="dish-visual-bg g-bg-2"></div>
+          <span class="dish-emoji"><img src="https://media.istockphoto.com/id/1305699663/photo/seafood-platter-grilled-lobster-shrimps-scallops-langoustines-octopus-squid-on-white-plate.webp?a=1&b=1&s=612x612&w=0&k=20&c=bXhr05Kx_DDdqFXcjZSqQ_3Wt2_kNAZ3oZ0U9k65EyA=" alt=""></span>
+        </div>
+        <div class="dish-info">
+          <div class="dish-category">Seafood</div>
+          <h3 class="dish-name">Charred Lobster</h3>
+          <p class="dish-desc">Atlantic lobster grilled over olive wood, served with saffron beurre blanc and sea herbs.</p>
+          <div class="dish-footer">
+            <span class="dish-price"><sup>$</sup>145</span>
+            <span class="dish-tag">Seasonal</span>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal reveal-delay-2">
+        <div class="dish-visual">
+          <div class="dish-visual-bg g-bg-3"></div>
+          <span class="dish-emoji"><img src="https://media.istockphoto.com/id/2269401079/photo/pink-dessert-served-in-a-white-bowl-on-a-wooden-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=6q3rr1Sbvpl1DutLJ2mOQ5MijpV2sTblkQxmnBbmFhM=" alt=""></span>
+        </div>
+        <div class="dish-info">
+          <div class="dish-category">Dessert</div>
+          <h3 class="dish-name">Rose Gold Soufflé</h3>
+          <p class="dish-desc">A delicate rose-water soufflé with 24k gold leaf, served with pistachio crème anglaise.</p>
+          <div class="dish-footer">
+            <span class="dish-price"><sup>$</sup>48</span>
+            <span class="dish-tag">Signature</span>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal reveal-delay-3">
+        <div class="dish-visual">
+          <div class="dish-visual-bg g-bg-4"></div>
+          <span class="dish-emoji"><img src="https://images.unsplash.com/photo-1594978583693-8dfdfc93f052?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QnJ1c2NoZXR0YXxlbnwwfHwwfHx8MA%3D%3D" alt=""></span>
+        </div>
+        <div class="dish-info">
+          <div class="dish-category">Starter</div>
+          <h3 class="dish-name">Olive Flame Bruschetta</h3>
+          <p class="dish-desc">House-made focaccia, wood-fired, topped with heirloom tomatoes, aged Manchego, and first-press EVOO.</p>
+          <div class="dish-footer">
+            <span class="dish-price"><sup>$</sup>32</span>
+            <span class="dish-tag">Bestseller</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section id="quote">
+  <blockquote class="reveal">"Food is not just eating energy. It's an experience — and at Olive Flame, we make every experience extraordinary."</blockquote>
+  <cite>— Chef Marco Varela, Executive Chef</cite>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Gallery</div>
+      <h2 class="section-title">A Feast for<br><em>Every Sense</em></h2>
+    </div>
+  </div>
+  <div class="gallery-grid" style="margin-top: 48px; padding: 0 clamp(20px, 5vw, 80px);">
+    <div class="gallery-item reveal">
+      <div class="gallery-cell g-bg-1">🥩</div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-1">
+      <div class="gallery-cell g-bg-2">🍽️</div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-2">
+      <div class="gallery-cell g-bg-3">🥂</div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-3">
+      <div class="gallery-cell g-bg-4">🫒</div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-4">
+      <div class="gallery-cell g-bg-5">🌿</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="16">0</div>
+      <div class="stat-label">Years Serving</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-num" data-target="48">0</div>
+      <div class="stat-label">Signature Dishes</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-num" data-target="3">0</div>
+      <div class="stat-label">Michelin Stars</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-num" data-target="12000">0</div>
+      <div class="stat-label">Happy Guests / Year</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Guest Voices</div>
+      <h2 class="section-title">What Our Guests<br><em>Remember</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The Wagyu alone was worth the flight from Paris. Olive Flame doesn't just serve food — it stages an event. Utterly breathtaking."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">👩</div>
+          <div class="author-info">
+            <div class="name">Sophie Beaumont</div>
+            <div class="origin">Paris, France</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"We held our anniversary dinner here and it was beyond anything we imagined. The chef's table is an experience that will stay with us forever."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">👨</div>
+          <div class="author-info">
+            <div class="name">James & Rachel Lin</div>
+            <div class="origin">New York, USA</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Every detail was perfect — from the lighting to the last petit four. This is what a Michelin three-star experience should feel like."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">👩</div>
+          <div class="author-info">
+            <div class="name">Layla Al-Farsi</div>
+            <div class="origin">Dubai, UAE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-inner">
+    <div class="faq-layout">
+      <div class="reveal">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title" style="font-size: clamp(32px,4vw,52px);">Your<br><em>Questions</em><br>Answered</h2>
+        <div class="gold-line"></div>
+        <p style="font-size:13px; color: var(--white-dim); line-height:1.8;">Can't find your answer? Contact us directly and our team will respond within the hour.</p>
+        <br>
+        <a href="#contact" class="btn-outline" style="margin-top:16px;">Contact Us</a>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do you accommodate dietary restrictions?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Absolutely. We cater to all dietary needs including vegan, vegetarian, gluten-free, halal, and specific allergy requirements. Please inform us at the time of reservation and our chef will craft a tailored menu for you.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What is your dress code?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We maintain a smart casual to formal dress code. We kindly ask guests to avoid sportswear, beachwear, or overly casual attire. For private events, please check with our events team for specific requirements.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How far in advance should I book?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We recommend reserving at least 2–3 weeks in advance for standard dining and 4–6 weeks for the Chef's Table. For private events and catering, please contact us 6–8 weeks ahead to ensure we can deliver the best experience.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Is valet parking available?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes, complimentary valet parking is available for all dining reservations. Our valet operates from 5:00 PM through to one hour after the kitchen closes. Please present your ticket to the host upon arrival.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can you arrange private event catering off-site?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes. Our catering team specializes in off-site events ranging from intimate gatherings to large corporate events. We bring the full Olive Flame experience — including our chefs, equipment, and signature service — wherever you need us.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" style="background: var(--dark2);">
+  <div class="section-inner">
+    <div class="reveal" style="text-align: center; margin-bottom: 72px;">
+      <div class="section-label" style="justify-content: center;">Get in Touch</div>
+      <h2 class="section-title" style="text-align: center;">Reserve Your<br><em>Evening</em></h2>
+    </div>
+    <div class="contact-grid">
+      <form class="contact-form reveal" onsubmit="handleForm(event)">
+        <div class="form-row">
+          <div class="form-field">
+            <label>First Name</label>
+            <input type="text" placeholder="Marco" required>
+          </div>
+          <div class="form-field">
+            <label>Last Name</label>
+            <input type="text" placeholder="Rossi" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Email Address</label>
+          <input type="email" placeholder="marco@example.com" required>
+        </div>
+        <div class="form-field">
+          <label>Phone</label>
+          <input type="tel" placeholder="+1 (555) 000-0000">
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label>Date</label>
+            <input type="date" required>
+          </div>
+          <div class="form-field">
+            <label>Party Size</label>
+            <select>
+              <option>1 Guest</option>
+              <option selected>2 Guests</option>
+              <option>3–4 Guests</option>
+              <option>5–6 Guests</option>
+              <option>Private Event</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Special Requests</label>
+          <textarea rows="4" placeholder="Dietary requirements, occasion, seating preferences..."></textarea>
+        </div>
+        <button type="submit" class="btn-gold">Confirm Reservation</button>
+      </form>
+      <div class="contact-info reveal reveal-delay-1">
+        <div class="contact-block">
+          <h4>Location</h4>
+          <div class="map-placeholder">
+            <span class="map-icon">📍</span>
+            <span>12 Ember Row, Finsbury Quarter</span>
+            <span style="font-size: 10px; color: var(--gold); letter-spacing: 2px;">GOOGLE MAPS</span>
+          </div>
+        </div>
+        <div class="contact-block">
+          <h4>Hours</h4>
+          <p>Monday – Thursday: 5:00 PM – 10:30 PM<br>Friday – Saturday: 5:00 PM – 11:30 PM<br>Sunday: 4:00 PM – 9:30 PM</p>
+        </div>
+        <div class="contact-block">
+          <h4>Reservations</h4>
+          <p>+1 (212) 555-0198<br>reserve@oliveflame.com</p>
+        </div>
+        <div class="contact-block">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Instagram">📸</a>
+            <a href="#" class="social-link" title="Facebook">📘</a>
+            <a href="#" class="social-link" title="Twitter">🐦</a>
+            <a href="#" class="social-link" title="TripAdvisor">⭐</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+  <div class="newsletter-inner">
+    <h2>Stay at Our Table</h2>
+    <p>Seasonal menus, exclusive events, and private tastings — delivered to your inbox.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+</div><!-- end home page -->
+
+<!-- ═══════════════════════════════════════
+     ABOUT PAGE
+═══════════════════════════════════════ -->
+<div class="page" id="page-about">
+
+<div class="page-hero" data-text="Story">
+  <div class="page-hero-content">
+    <div class="section-label">About Olive Flame</div>
+    <h1 class="section-title" style="font-size: clamp(48px, 7vw, 90px);">Our <em>Story</em></h1>
+  </div>
+</div>
+
+<!-- Story Section -->
+<section class="section" style="background: var(--dark);">
+  <div class="section-inner">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;" class="responsive-2col">
+      <div class="reveal">
+        <div class="section-label">The Beginning</div>
+        <h2 class="section-title" style="font-size: clamp(32px,4vw,52px);">From a Small<br><em>Hearth</em> to a<br>City Icon</h2>
+        <div class="gold-line"></div>
+        <p style="font-size: 14px; color: var(--white-dim); line-height: 1.9; margin-bottom: 20px;">In 2008, Marco Varela left his position at a renowned Parisian kitchen with a single conviction: that Mediterranean fire-cooking deserved a home of its own. With a cast-iron hearth, three tables, and a relentless pursuit of perfection, Olive Flame was born.</p>
+        <p style="font-size: 14px; color: var(--white-dim); line-height: 1.9;">Today, sixteen years and three Michelin stars later, that original flame still burns at the heart of everything we do. We have never lost sight of what matters most — the guest experience, the ingredient, and the moment.</p>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="glass-card" style="text-align: center; padding: 60px 40px;">
+          <div style="font-size: 80px; margin-bottom: 24px;">🏛️</div>
+          <div style="font-family: var(--serif); font-size: 18px; font-style: italic; color: var(--white-dim); line-height: 1.6;">"A restaurant is not a business. It is a relationship between the cook and the guest — and that relationship must be sacred."</div>
+          <div style="margin-top: 20px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold);">Marco Varela, Founder</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chef Section -->
+<section id="chef">
+  <div class="chef-grid">
+    <div class="chef-visual">
+      <div class="chef-bg-text">MV</div>
+      <div class="chef-avatar reveal">👨‍🍳</div>
+    </div>
+    <div class="chef-content">
+      <div class="reveal">
+        <div class="section-label">The Culinary Mind</div>
+        <div class="chef-name">Marco Varela</div>
+        <div class="chef-role">Executive Chef & Founder</div>
+        <p class="chef-bio">Born in Valencia to a family of fishermen and farmers, Marco Varela developed his palate long before he ever held a knife. Trained under three Michelin-starred mentors across France and Italy, he spent a decade mastering classical technique before returning to his roots in open-fire Mediterranean cooking.</p>
+        <p class="chef-bio">His philosophy is simple: let the fire speak, let the ingredient sing, and the chef's job is merely to listen and arrange.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Instagram">📸</a>
+          <a href="#" class="social-link" title="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="section" style="background: var(--dark2);">
+  <div class="section-inner">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px;" class="responsive-2col">
+      <div class="reveal">
+        <div class="section-label">Our Journey</div>
+        <h2 class="section-title" style="font-size: clamp(32px,4vw,52px);">Milestones of<br><em>Excellence</em></h2>
+        <div class="gold-line"></div>
+        <div class="stats-grid" style="grid-template-columns: 1fr 1fr; max-width: 100%; gap: 24px; margin: 0;">
+          <div class="stat-item">
+            <div class="stat-num" style="font-size: 48px;" data-target="3">0</div>
+            <div class="stat-label">Michelin Stars</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" style="font-size: 48px;" data-target="24">0</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2008</div>
+            <div class="timeline-title">The First Flame</div>
+            <div class="timeline-text">Olive Flame opens its doors on Ember Row with 32 covers and a single wood-fired hearth.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2012</div>
+            <div class="timeline-title">First Michelin Star</div>
+            <div class="timeline-text">Recognized by the Michelin Guide for exceptional quality and innovation in Mediterranean cuisine.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2016</div>
+            <div class="timeline-title">The Chef's Table</div>
+            <div class="timeline-text">Launch of our iconic six-seat Chef's Table experience, booked months in advance.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-title">Three Stars Achieved</div>
+            <div class="timeline-text">Olive Flame joins an elite tier — awarded three Michelin stars, placing us among the world's finest.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-title">Expansion</div>
+            <div class="timeline-text">Opening of our private events wing and launch of bespoke catering services worldwide.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission -->
+<section class="section" style="background: var(--black);">
+  <div class="section-inner" style="text-align: center;">
+    <div class="reveal">
+      <div class="section-label" style="justify-content: center;">Our Philosophy</div>
+      <h2 class="section-title" style="text-align: center; font-size: clamp(32px,5vw,68px);">We Believe Food Is<br><em>An Act of Love</em></h2>
+      <div class="gold-line" style="margin: 40px auto;"></div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 60px;">
+      <div class="glass-card reveal">
+        <div style="font-size: 36px; margin-bottom: 20px;">🌱</div>
+        <div style="font-family: var(--serif); font-size: 20px; margin-bottom: 12px;">Sustainability</div>
+        <div style="font-size: 12px; color: var(--white-dim); line-height: 1.8;">Zero-waste kitchen philosophy, composting programs, and partnerships with regenerative farms.</div>
+      </div>
+      <div class="glass-card reveal reveal-delay-1">
+        <div style="font-size: 36px; margin-bottom: 20px;">🤝</div>
+        <div style="font-family: var(--serif); font-size: 20px; margin-bottom: 12px;">Community</div>
+        <div style="font-size: 12px; color: var(--white-dim); line-height: 1.8;">Monthly community dinners and culinary scholarships for aspiring chefs from underserved backgrounds.</div>
+      </div>
+      <div class="glass-card reveal reveal-delay-2">
+        <div style="font-size: 36px; margin-bottom: 20px;">✨</div>
+        <div style="font-family: var(--serif); font-size: 20px; margin-bottom: 12px;">Excellence</div>
+        <div style="font-size: 12px; color: var(--white-dim); line-height: 1.8;">An uncompromising standard where every dish, every service, every detail is held to the highest bar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter" style="background: var(--gold); padding: 80px clamp(20px,5vw,80px);">
+  <div class="newsletter-inner">
+    <h2>Stay at Our Table</h2>
+    <p>Seasonal menus, exclusive events, and private tastings — delivered to your inbox.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+</div><!-- end about page -->
+
+<!-- ═══════════════════════════════════════
+     SERVICES PAGE
+═══════════════════════════════════════ -->
+<div class="page" id="page-services">
+
+<div class="page-hero" data-text="Services" style="background: linear-gradient(160deg, #0a0a0a 0%, #0d0800 60%, #0a0a0a 100%);">
+  <div class="page-hero-content">
+    <div class="section-label">What We Offer</div>
+    <h1 class="section-title" style="font-size: clamp(48px, 7vw, 90px);">Our <em>Services</em></h1>
+  </div>
+</div>
+
+<!-- Services Overview -->
+<section class="section" style="background: var(--dark);">
+  <div class="section-inner services-intro">
+    <div class="reveal" style="text-align: center; margin-bottom: 72px;">
+      <div class="section-label" style="justify-content:center;">Tailor-Made</div>
+      <h2 class="section-title" style="text-align:center;">Every Occasion<br><em>Elevated</em></h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+      <div class="glass-card reveal">
+        <span style="font-size: 40px; display:block; margin-bottom:20px;">🕯️</span>
+        <h3 style="font-family: var(--serif); font-size: 24px; font-weight: 400; margin-bottom: 12px;">Fine Dining</h3>
+        <p style="font-size: 13px; color: var(--white-dim); line-height: 1.8;">An immersive evening in our intimate dining room. À la carte or tasting menus, paired with exceptional wines.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-1">
+        <span style="font-size: 40px; display:block; margin-bottom:20px;">🥂</span>
+        <h3 style="font-family: var(--serif); font-size: 24px; font-weight: 400; margin-bottom: 12px;">Private Events</h3>
+        <p style="font-size: 13px; color: var(--white-dim); line-height: 1.8;">Exclusive venue hire for corporate dinners, celebrations, and intimate gatherings. Fully bespoke menus.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-2">
+        <span style="font-size: 40px; display:block; margin-bottom:20px;">🚚</span>
+        <h3 style="font-family: var(--serif); font-size: 24px; font-weight: 400; margin-bottom: 12px;">Elite Catering</h3>
+        <p style="font-size: 13px; color: var(--white-dim); line-height: 1.8;">Olive Flame comes to you. Our team brings the full kitchen experience to your venue, worldwide.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-3">
+        <span style="font-size: 40px; display:block; margin-bottom:20px;">📦</span>
+        <h3 style="font-family: var(--serif); font-size: 24px; font-weight: 400; margin-bottom: 12px;">Curated Delivery</h3>
+        <p style="font-size: 13px; color: var(--white-dim); line-height: 1.8;">Restaurant-quality dishes delivered in heated presentation boxes. Selected menu available within 10km.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section" id="pricing" style="background: var(--black);">
+  <div class="section-inner">
+    <div class="reveal" style="text-align: center; margin-bottom: 0;">
+      <div class="section-label" style="justify-content:center;">Transparent Pricing</div>
+      <h2 class="section-title" style="text-align:center;">Choose Your<br><em>Experience</em></h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <span class="pricing-icon">🌿</span>
+        <div class="pricing-name">Essentials</div>
+        <div class="pricing-title">The Classic Table</div>
+        <div class="pricing-price"><sup>$</sup>95<span>/person</span></div>
+        <p class="pricing-desc">A refined 3-course dinner in our main dining room. Perfect for an elegant evening out.</p>
+        <ul class="pricing-features">
+          <li>3-course à la carte menu</li>
+          <li>Welcome amuse-bouche</li>
+          <li>Sommelier consultation</li>
+          <li>Complimentary bread service</li>
+          <li>Valet parking</li>
+        </ul>
+        <a href="#contact" class="btn-outline" style="display: block; text-align: center;">Reserve Now</a>
+      </div>
+      <div class="pricing-card featured reveal reveal-delay-1">
+        <span class="pricing-icon">🔥</span>
+        <div class="pricing-name">Signature</div>
+        <div class="pricing-title">The Tasting Menu</div>
+        <div class="pricing-price"><sup>$</sup>185<span>/person</span></div>
+        <p class="pricing-desc">Our signature 7-course tasting journey, personally designed by Chef Marco.</p>
+        <ul class="pricing-features">
+          <li>7-course tasting menu</li>
+          <li>Wine pairing (5 glasses)</li>
+          <li>Chef's table option available</li>
+          <li>Personalized menu card</li>
+          <li>Post-dinner kitchen tour</li>
+          <li>Complimentary valet & coat check</li>
+        </ul>
+        <a href="#contact" class="btn-gold" style="display: block; text-align: center;">Reserve Now</a>
+      </div>
+      <div class="pricing-card reveal reveal-delay-2">
+        <span class="pricing-icon">👑</span>
+        <div class="pricing-name">Prestige</div>
+        <div class="pricing-title">Private Event</div>
+        <div class="pricing-price" style="font-size: 36px;">Custom</div>
+        <p class="pricing-desc">Full venue buyout or private room for your exclusive event. Entirely bespoke experience.</p>
+        <ul class="pricing-features">
+          <li>Private dining room (up to 40)</li>
+          <li>Bespoke menu creation</li>
+          <li>Dedicated event manager</li>
+          <li>Custom floral & décor</li>
+          <li>Personalised wine selection</li>
+          <li>Off-site catering available</li>
+        </ul>
+        <a href="#contact" class="btn-outline" style="display: block; text-align: center;">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Comparison -->
+<section class="section" style="background: var(--dark2);">
+  <div class="section-inner">
+    <div class="reveal" style="text-align: center; margin-bottom: 60px;">
+      <div class="section-label" style="justify-content:center;">At a Glance</div>
+      <h2 class="section-title" style="text-align:center; font-size: clamp(28px,4vw,48px);">What's <em>Included</em></h2>
+    </div>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 13px;" class="reveal">
+        <thead>
+          <tr>
+            <th style="text-align:left; padding: 16px 20px; color: var(--gold); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid rgba(201,168,76,0.2);">Feature</th>
+            <th style="padding: 16px 20px; color: var(--white-dim); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid rgba(201,168,76,0.2);">Essentials</th>
+            <th style="padding: 16px 20px; color: var(--gold); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid rgba(201,168,76,0.5); background: rgba(201,168,76,0.05);">Signature</th>
+            <th style="padding: 16px 20px; color: var(--white-dim); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid rgba(201,168,76,0.2);">Prestige</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(201,168,76,0.06);">
+            <td style="padding: 16px 20px; color: var(--white-dim);">Courses</td>
+            <td style="padding: 16px 20px; text-align: center;">3</td>
+            <td style="padding: 16px 20px; text-align: center; background: rgba(201,168,76,0.04); color: var(--gold);">7</td>
+            <td style="padding: 16px 20px; text-align: center;">Custom</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(201,168,76,0.06);">
+            <td style="padding: 16px 20px; color: var(--white-dim);">Wine Pairing</td>
+            <td style="padding: 16px 20px; text-align: center; color: var(--white-dim);">Optional</td>
+            <td style="padding: 16px 20px; text-align: center; background: rgba(201,168,76,0.04); color: var(--gold);">✓ Included</td>
+            <td style="padding: 16px 20px; text-align: center; color: var(--gold);">✓ Bespoke</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(201,168,76,0.06);">
+            <td style="padding: 16px 20px; color: var(--white-dim);">Chef's Table</td>
+            <td style="padding: 16px 20px; text-align: center; color: var(--white-dim);">–</td>
+            <td style="padding: 16px 20px; text-align: center; background: rgba(201,168,76,0.04); color: var(--gold);">✓ Available</td>
+            <td style="padding: 16px 20px; text-align: center; color: var(--gold);">✓ Private</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(201,168,76,0.06);">
+            <td style="padding: 16px 20px; color: var(--white-dim);">Valet Parking</td>
+            <td style="padding: 16px 20px; text-align: center; color: var(--gold);">✓</td>
+            <td style="padding: 16px 20px; text-align: center; background: rgba(201,168,76,0.04); color: var(--gold);">✓</td>
+            <td style="padding: 16px 20px; text-align: center; color: var(--gold);">✓</td>
+          </tr>
+          <tr>
+            <td style="padding: 16px 20px; color: var(--white-dim);">Event Manager</td>
+            <td style="padding: 16px 20px; text-align: center; color: var(--white-dim);">–</td>
+            <td style="padding: 16px 20px; text-align: center; background: rgba(201,168,76,0.04); color: var(--white-dim);">–</td>
+            <td style="padding: 16px 20px; text-align: center; color: var(--gold);">✓ Dedicated</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter" style="background: var(--gold); padding: 80px clamp(20px,5vw,80px);">
+  <div class="newsletter-inner">
+    <h2>Stay at Our Table</h2>
+    <p>Seasonal menus, exclusive events, and private tastings — delivered to your inbox.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+</div><!-- end services page -->
+
+<!-- ═══════════════════════════════════════
+     SHARED FOOTER (shown on all pages)
+═══════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">Olive<span> Flame</span></span>
+      <p>A sanctuary of flavour in the heart of the city. Three Michelin stars, one unwavering commitment — to make every evening extraordinary.</p>
+      <div class="social-links">
+        <a href="#" class="social-link">📸</a>
+        <a href="#" class="social-link">📘</a>
+        <a href="#" class="social-link">🐦</a>
+        <a href="#" class="social-link">⭐</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('about')">About</a></li>
+        <li><a href="#" onclick="showPage('services')">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Dining</h4>
+      <ul>
+        <li><a href="#dishes">Menu</a></li>
+        <li><a href="#" onclick="showPage('services')">Tasting Experience</a></li>
+        <li><a href="#" onclick="showPage('services')">Chef's Table</a></li>
+        <li><a href="#" onclick="showPage('services')">Private Events</a></li>
+        <li><a href="#" onclick="showPage('services')">Catering</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">12 Ember Row, Finsbury Quarter</a></li>
+        <li><a href="tel:+12125550198">+1 (212) 555-0198</a></li>
+        <li><a href="mailto:reserve@oliveflame.com">reserve@oliveflame.com</a></li>
+        <li><a href="#contact">Make a Reservation</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Olive Flame Restaurant. All rights reserved.</p>
+    <div style="display:flex; gap: 24px;">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Settings</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ─── NAVBAR SCROLL ───
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ─── HAMBURGER ───
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+
+function closeMobile() {
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+}
+
+// ─── PAGE ROUTING ───
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById('page-' + page);
+  if (target) {
+    target.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(initReveal, 100);
+    setTimeout(initCounters, 200);
+  }
+}
+
+// ─── REVEAL ON SCROLL ───
+function initReveal() {
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(r => observer.observe(r));
+}
+
+// ─── COUNTERS ───
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 1800;
+  const start = performance.now();
+  const update = (time) => {
+    const elapsed = time - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const val = Math.round(eased * target);
+    el.textContent = target >= 10000 ? val.toLocaleString() : val;
+    if (progress < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
+
+function initCounters() {
+  const counters = document.querySelectorAll('[data-target]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => observer.observe(c));
+}
+
+// ─── FAQ ───
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const answer = item.querySelector('.faq-answer');
+  const isOpen = item.classList.contains('open');
+
+  // Close all
+  document.querySelectorAll('.faq-item.open').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-answer').style.maxHeight = '0';
+  });
+
+  if (!isOpen) {
+    item.classList.add('open');
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+  }
+}
+
+// ─── FORMS ───
+const notification = document.getElementById('notification');
+
+function showNotification(msg) {
+  notification.textContent = msg;
+  notification.classList.add('show');
+  setTimeout(() => notification.classList.remove('show'), 4000);
+}
+
+function handleForm(e) {
+  e.preventDefault();
+  showNotification('✦ Your reservation request has been received.');
+  e.target.reset();
+}
+
+function handleNewsletter(e) {
+  e.preventDefault();
+  showNotification('✦ Welcome to the Olive Flame family.');
+  e.target.reset();
+}
+
+// ─── INIT ───
+document.addEventListener('DOMContentLoaded', () => {
+  initReveal();
+  initCounters();
+});
+
+// Also init on page load for immediate visibility
+setTimeout(initReveal, 100);
+setTimeout(initCounters, 200);
+</script>
+</body>
+</html>
